@@ -1,18 +1,17 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="I am IronIt demo project"/>
+
   </div>
 </template>
 
+
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
+  mounted() {
+    console.log(process.env.VUE_APP_WEATHER_KEY)
+  },
 }
 </script>
 
